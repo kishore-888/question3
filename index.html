@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery2</title>
+    <link rel="stylesheet" href="question_3.css">
+</head>
+
+<body>
+    <div class="gallery">
+        <img src="./images 200w300h/mock_image1.jpg" alt="Image 1"  onclick="openModal1('image1.jpg')">
+        <img src="./images 200w300h/mock_image2.jpg" alt="Image 2"  onclick="openModal2('image2.jpg')">
+        <img src="./images 200w300h/mock_image3.jpg" alt="Image 3"  onclick="openModal3('image3.jpg')">
+    </div>
+
+    <div id="popup1" class="image1">
+        <span class="close" onclick="closeModal1()">x</span>
+         <div class="image-content1" id="popupImage1">
+            <img src="./images 200w300h/mock_image1.jpg" class="image-content1" id="popupImage1">
+        </div>
+    </div>
+    <div id="popup2" class="image2">
+        <span class="close" onclick="closeModal2()">x</span>
+        <div class="image-content2" id="popupImage2">
+            <img src="./images 200w300h/mock_image2.jpg" class="image-content2" id="popupImage2">
+        </div>
+    </div>
+    <div id="popup3" class="image3">
+        <span class="close" onclick="closeModal3()">x</span>
+        <div class="image-content3" id="popupImage3">
+            <img src="./images 200w300h/mock_image3.jpg" class="image-content3" id="popupImage3">
+        </div>
+    </div>
+
+    <script src="question_3.js"></script>
+</body>
+
+</html>
